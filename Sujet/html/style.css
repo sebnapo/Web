@@ -1,0 +1,316 @@
+/* 'normalisation' des marges et padding pour simplifier le positionnement */
+*{ 
+  margin: 0;
+  padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* mise en page globale */
+body{
+	background-color :#f6f6f6;
+	min-width: 480px;
+	height: 100%;
+	font-family: "Helvetica Neue", Helvetica, 
+	Arial, sans-serif;
+}
+
+#container{
+	position:relative;
+	width: 980px;
+	margin: 0 auto;
+}
+
+li{
+	display: inline-block;	
+}
+
+/* mise en page de l'entête */
+header{
+	height: 80px;
+}
+
+header > h1{
+	text-indent: -9999px;
+	background-image: url("images/poly-music.png");
+	background-repeat: no-repeat;
+	width:71%;
+
+}
+
+.lowernav {
+	margin-top: 10px;
+}
+
+header > h1,form {
+	display: inline-block;
+	height:40px;
+	margin-top: 5px;
+}
+
+#btn, #Search {
+	position: absolute;
+	top: 8px;
+	right: 0;
+}
+
+body::before{
+	content:"";
+	background-color: #000;
+	position:absolute;
+	display:block;
+	height:80px;
+	width:100%;
+	z-index: -1;
+}
+
+#container > header a{
+	color:#fff;
+	font-weight: bold;
+}
+
+header nav {
+	display: inline-block;
+}
+
+#searchBar, #socialNetwork, #sign {
+	float: right;
+	color: #000;
+}
+
+#sign a{
+	font-size: 11px;
+	margin-top: 10px;
+}
+
+/* Mis en page des logos reseaux sociaux  */
+#fb {
+	text-indent: -9999px;
+	background-image: url("images/social-header.png");
+	background-position: 0 -70px;
+	background-repeat: no-repeat;
+	width:100%;
+}
+
+#fb:hover {
+	background-position: 0 -56px;
+}
+
+#tw {
+	text-indent: -9999px;
+	background-image: url("images/social-header.png");
+	background-position: 0 -28px;
+	background-repeat: no-repeat;
+	width:100%;
+}
+
+#tw:hover {
+	text-indent: -9999px;
+	background-position: 0 -42px;
+	background-image: url("images/social-header.png");
+	background-repeat: no-repeat;
+	width:100%;
+}
+
+#tb{
+	text-indent: -9999px;
+	background-position: 0 -126px;
+	background-image: url("images/social-header.png");
+	background-repeat: no-repeat;
+	width:100%;
+}
+
+#tb:hover {
+	text-indent: -9999px;
+	background-position: 0 -98px;
+	background-image: url("images/social-header.png");
+	background-repeat: no-repeat;
+	width:100%;
+}
+
+#go {
+	text-indent: -9999px;
+	background-position: 0 -112px;
+	background-image: url("images/social-header.png");
+	background-repeat: no-repeat;
+	width:100%;
+}
+
+#go:hover {
+	text-indent: -9999px;
+	background-position: 0 -84px;
+	background-image: url("images/social-header.png");
+	background-repeat: no-repeat;
+	width:100%;
+}
+
+#rs {
+	text-indent: -9999px;
+	background-position: 0 -14px;
+	background-image: url("images/social-header.png");
+	background-repeat: no-repeat;
+	width:100%;
+}
+
+#rs:hover {
+	text-indent: -9999px;
+	background-position: 0 0;
+	background-image: url("images/social-header.png");
+	background-repeat: no-repeat;
+	width:100%;
+}
+
+#sign {
+	margin-right: 100px;
+}
+
+
+#Search {
+	color: white;
+	height: 28px;
+	border-color: grey;
+	background-color: black;
+}
+
+#btn {
+	color: black;
+	top: 15px;
+	right: 10px;
+}
+
+#sec1,#sec2,#sec3 {
+	width: 70%;
+	margin-top: 20px;
+}
+
+/* mise en page de la section Pop/Rock */
+#sec1 h2 {
+	margin-top: 20px;
+	border-bottom: 1px solid #505050;
+}
+/* mise en page de la section Pop/Rock Artists Highlights */
+
+#sec2 {
+	background-color: #fff;
+	padding: 20px;
+}
+
+#sec2 article {
+	display: inline-block;
+	width: 30%;
+}
+
+#sec2 img {
+	width: 162px;
+	height: 162px;
+	z-index: -1;
+}
+
+#sec2 img:hover + #sec2 img p {
+	display: block;
+}
+
+#sec2 p {
+	display: none;
+}
+
+
+#sec2  h4 {
+	margin-top: -21px;
+}
+
+#sec2  h4 a {
+	background-color: black;
+	margin-left: 5px;
+	color: white;
+}
+/* mise en page de la section Pop/Rock Song Highlights */
+#sec3 {
+	background-color: #fff;
+	padding: 20px;
+}
+
+#sec3 table {
+	width: 100%;
+	text-align: left;
+}
+
+#sec3 td, #sec3 thead{
+	padding-top: 10px;
+	border-top:  1px solid #505050;
+}
+#sec3 table a {
+	color: black;
+}
+
+#sec3 table a.colorBlue{
+	color :#0089c1;
+}
+
+#sec3 table tr:last-child td {
+	border-bottom: 1px solid #505050;
+}
+
+#sec3 > a {
+	margin-top: 10px;
+	float: right;
+	color :#0089c1;
+}
+
+/* mise en page de l'aside Recent Pop/Rock Releases */
+#sec4 {
+	background-color: #fff;
+	padding: 10px;
+	margin-top: 100px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 240px;
+	border: 1px solid #fff;
+}
+
+#sec4 hr {
+	margin: 10px;
+}
+
+#sec4 header,#sec4 article img {
+	display: inline-block;
+}
+#sec4 article img {
+	width: 50%;
+}
+
+#sec4 article h3 {
+	width: 50%;
+	float: right;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#sec4 article {
+	margin-top: 20px;
+}
+
+#sec4 article b {
+	float: right;
+}
+/* mise en page du footer */
+
+footer {
+	margin-top: 50px;
+	height: 80px;
+	color: #fff;
+	background-color: black;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer li, footer p {
+	padding-top: 5px;
+	padding-left: 20px;
+}
+/* règles de mise en page pour rendre le site responsive */
